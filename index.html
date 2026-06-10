@@ -66,7 +66,7 @@
   header.hero .title{font-size:18.5px;color:#dbe4f5;margin:0 0 16px;font-weight:600;}
   header.hero .dept{font-size:14.5px;color:var(--muted);margin:2px 0;}
   header.hero img.photo{
-    width:184px;height:184px;border-radius:24px;object-fit:cover;object-position:50% 30%;
+    width:320px;height:auto;aspect-ratio:1;border-radius:24px;object-fit:cover;
     flex:0 0 auto;border:1px solid var(--line);
     box-shadow:0 24px 60px rgba(0,0,0,.5), 0 0 60px rgba(124,58,237,.25);
   }
@@ -103,6 +103,7 @@
     .layout{flex-direction:column;}
     aside{flex:1 1 auto;width:100%;position:static;padding-top:0;}
     header.hero .wrap{flex-direction:column-reverse;align-items:flex-start;gap:28px;padding:56px 24px 48px;}
+    header.hero img.photo{width:min(320px,100%);}
   }
   section{padding:44px 0 6px;scroll-margin-top:58px;}
   h2{font-size:24px;color:#fff;margin:0 0 18px;font-weight:750;letter-spacing:-.3px;display:flex;align-items:center;gap:12px;}
