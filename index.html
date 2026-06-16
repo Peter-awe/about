@@ -50,9 +50,9 @@
   .page{position:relative;z-index:1;}
 
   /* ============ hero ============ */
-  header.hero{position:relative;overflow:hidden;}
+  header.hero{position:relative;overflow:hidden;min-height:100vh;display:flex;align-items:center;}
   #wave{position:absolute;inset:0;width:100%;height:100%;display:block;}
-  header.hero .wrap{position:relative;z-index:1;display:flex;gap:42px;align-items:center;padding:88px 24px 70px;flex-wrap:wrap;}
+  header.hero .wrap{position:relative;z-index:1;display:flex;gap:42px;align-items:center;padding:104px 24px 84px;flex-wrap:wrap;}
   .eyebrow{
     display:inline-block;font-size:12.5px;font-weight:700;letter-spacing:1.6px;text-transform:uppercase;
     color:var(--cyan);background:rgba(103,232,249,.08);border:1px solid rgba(103,232,249,.3);
@@ -63,7 +63,8 @@
     background:linear-gradient(92deg,#fff 8%,var(--cyan) 45%,var(--violet) 80%);
     -webkit-background-clip:text;background-clip:text;color:transparent;
   }
-  header.hero .title{font-size:18.5px;color:#dbe4f5;margin:0 0 16px;font-weight:600;}
+  header.hero .title{font-size:18.5px;color:#dbe4f5;margin:0 0 12px;font-weight:600;}
+  header.hero .tagline{font-size:clamp(20px,3.1vw,32px);font-weight:800;letter-spacing:-.6px;line-height:1.22;margin:6px 0 20px;max-width:none;background:linear-gradient(92deg,var(--cyan),var(--violet) 55%,var(--pink));-webkit-background-clip:text;background-clip:text;color:transparent;}
   header.hero .dept{font-size:14.5px;color:var(--muted);margin:2px 0;}
   header.hero img.photo{
     width:320px;height:auto;aspect-ratio:1;border-radius:24px;object-fit:cover;
@@ -82,8 +83,8 @@
 
   /* ============ nav ============ */
   nav.top{
-    position:sticky;top:0;z-index:10;
-    background:rgba(11,16,32,.6);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);
+    position:fixed;top:0;left:0;right:0;z-index:50;
+    background:rgba(11,16,32,.72);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);
     border-bottom:1px solid var(--line);
   }
   nav.top .wrap{display:flex;gap:4px;overflow-x:auto;scrollbar-width:none;}
@@ -105,7 +106,7 @@
     header.hero .wrap{flex-direction:column-reverse;align-items:flex-start;gap:28px;padding:56px 24px 48px;}
     header.hero img.photo{width:min(320px,100%);}
   }
-  section{padding:44px 0 6px;scroll-margin-top:58px;}
+  section{padding:84px 0 12px;scroll-margin-top:72px;}
   h2{font-size:24px;color:#fff;margin:0 0 18px;font-weight:750;letter-spacing:-.3px;display:flex;align-items:center;gap:12px;}
   h2::before{content:"";width:26px;height:3px;border-radius:2px;background:linear-gradient(90deg,var(--cyan),var(--violet));flex:0 0 auto;}
   p.lead{font-size:16.5px;margin-top:0;}
@@ -178,6 +179,7 @@
       <span class="eyebrow">Child Speech &amp; Language · Machine Learning</span>
       <h1>Qiwei Pan</h1>
       <p class="title">PhD Student, Speech-Language Pathology (Research)</p>
+      <p class="tagline">I don't wait for things to happen.<br>I make them happen.</p>
       <p class="dept">École d'orthophonie et d'audiologie · Faculté de médecine · Université de Montréal</p>
       <p class="dept">COALab · Centre de recherche Azrieli du CHU Sainte-Justine</p>
       <p class="dept">Supervisor: Prof. Selçuk Güven</p>
