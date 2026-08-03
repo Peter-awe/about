@@ -136,6 +136,9 @@
   .tag{display:inline-block;font-size:10.5px;font-weight:700;letter-spacing:.4px;padding:2.5px 10px;border-radius:99px;margin-left:6px;text-transform:uppercase;vertical-align:1px;}
   .tag.sub{background:rgba(251,191,36,.12);color:#fcd34d;border:1px solid rgba(251,191,36,.35);}
   .tag.prep{background:rgba(240,171,252,.12);color:#f0abfc;border:1px solid rgba(240,171,252,.35);}
+  .tag.done{background:rgba(74,222,128,.12);color:#4ade80;border:1px solid rgba(74,222,128,.35);}
+  .tag.upcoming{background:rgba(96,165,250,.12);color:#60a5fa;border:1px solid rgba(96,165,250,.35);}
+  .subhead{margin:30px 0 14px;font-size:14px;font-weight:700;color:var(--muted);}
   .summary{padding:13px 17px;font-size:14.3px;color:var(--muted);margin-top:8px;}
 
   .tools{display:grid;grid-template-columns:repeat(auto-fill,minmax(232px,1fr));gap:12px;}
@@ -207,9 +210,18 @@
 
       <section id="profile">
         <h2>Profile</h2>
-        <p class="lead">Qiwei Pan is a PhD student in Speech-Language Pathology (Research) at Université de Montréal, based in the COALab at the Centre de recherche Azrieli du CHU Sainte-Justine, under the supervision of Professor Selçuk Güven.</p>
+        <p class="lead">Qiwei Pan is a PhD student in Speech-Language Pathology (Research) at Université de Montréal, based in the <a href="https://coalab.org/" target="_blank" rel="noopener">COALab</a> at the Centre de recherche Azrieli du CHU Sainte-Justine, under the supervision of <a href="https://coalab.org/team/" target="_blank" rel="noopener">Professor Selçuk Güven</a>.</p>
         <p>His research uses machine learning for the early identification of developmental speech-language disorders (DSLD) in children. The guiding idea is that DSLD subtypes leave distinguishable acoustic, linguistic, and prosodic traces in children's spontaneous speech. Machine-learning models can pick up these traces for early screening, and explainable-AI methods can turn them into interpretable biomarkers that clinicians are able to validate and trust.</p>
-        <p>Qiwei reached this field through an interdisciplinary path: first an engineering degree, then a master's in computational linguistics, and now clinical speech AI. The combination of a quantitative engineering base and a deep background in linguistics is the lens he brings to children's speech. Alongside his research, he builds open-source tools that support the speech-processing and annotation workflows his lab relies on. In 2026 he received the Prix Mentorat, a peer-voted mentorship award from the École d'orthophonie et d'audiologie.</p>
+        <p>Qiwei reached this field through an interdisciplinary path: first an engineering degree, then a master's in computational linguistics, and now clinical speech AI. The combination of a quantitative engineering base and a deep background in linguistics is the lens he brings to children's speech. Alongside his research, he builds open-source tools that support the speech-processing and annotation workflows his lab relies on.</p>
+        <div class="box card">
+          <h3>Scholarships &amp; Awards</h3>
+          <ul>
+            <li>Bourse de mérite de la Faculté de médecine (Faculty of Medicine Merit Scholarship) — Université de Montréal</li>
+            <li>Bourse d'excellence de la Fondation CHU Sainte-Justine (CHU Sainte-Justine Foundation Excellence Scholarship) — Centre de recherche Azrieli, rated "Dossier exceptionnel" (top rating among 117 submissions)</li>
+            <li>Bourse de recrutement de l'École d'orthophonie et d'audiologie (School of Speech-Language Pathology and Audiology Recruitment Scholarship) — Université de Montréal</li>
+            <li>Prix de Mentorat (Mentorship Award) — École d'orthophonie et d'audiologie, peer-voted</li>
+          </ul>
+        </div>
       </section>
 
       <section id="research">
@@ -236,21 +248,38 @@
 
       <section id="publications">
         <h2>Publications &amp; Presentations</h2>
-        <p style="margin-top:0;font-size:14px;color:var(--muted);">Current speech and machine-learning work (in submission / in preparation):</p>
+        <p style="margin-top:0;font-size:14px;color:var(--muted);">Current speech and machine-learning work:</p>
         <div class="work card">
-          <div class="wt">Why Continued Pre-Training Backfires on Children's Speech: Late-Layer Damage, Early-Layer Preservation</div>
-          <div class="wm">IEEE Spoken Language Technology Workshop (SLT) 2026 <span class="tag sub">in submission</span></div>
+          <div class="wt">A Layer-Wise Diagnosis of Continued Pre-Training for Children's Speech Recognition: Late-Layer Damage, Early-Layer Preservation</div>
+          <div class="wm"><span class="tag sub">in submission</span></div>
         </div>
         <div class="work card">
-          <div class="wt">Thesis Proposal: Interpretable, Causally-Validated Biomarkers of Developmental Language Disorder from Self-Supervised Speech</div>
-          <div class="wm">AACL-IJCNLP 2026 Student Research Workshop <span class="tag sub">in submission</span></div>
+          <div class="wt">Self-Supervised Speech Models for Understanding and Identifying Developmental Language Disorder in Children</div>
+          <div class="wm"><span class="tag sub">in submission</span></div>
         </div>
         <div class="work card">
-          <div class="wt">Diagnosing Why Standard Adaptation Fails for Children's ASR: A Factorial Study with WavLM</div>
-          <div class="wm">Target: Journal of Speech, Language, and Hearing Research (JSLHR) <span class="tag prep">in preparation</span></div>
+          <div class="wt">Auditing the Recording Chain: A Metadata-Only Test for Batch Confound in Clinical Speech Corpora, and What Identification Looks Like When It Passes</div>
+          <div class="wm"><span class="tag prep">in preparation</span></div>
         </div>
         <div class="summary card">
           In total, 11 peer-reviewed publications across speech AI, computational linguistics, translation studies, and engineering, together with international conference presentations.
+        </div>
+        <p class="subhead">Presentations</p>
+        <div class="work card">
+          <div class="wt">Why AI Struggles with Children's Speech: The Importance of Development</div>
+          <div class="wm">Journée de la recherche étudiante, École d'orthophonie et d'audiologie, Université de Montréal · Poster · March 2026 <span class="tag done">completed</span></div>
+        </div>
+        <div class="work card">
+          <div class="wt">Breaking the Wall of Children's ASR</div>
+          <div class="wm">Falling Walls Lab Montréal 2026 · Oral (pitch) · April 2026 <span class="tag done">completed</span></div>
+        </div>
+        <div class="work card">
+          <div class="wt">When the Machine Can't Hear the Child: Locating the Damage in Children's Speech Recognition</div>
+          <div class="wm">Réseau ODISÉ, "Terrains Fertiles" · Oral · April 2026 <span class="tag done">completed</span></div>
+        </div>
+        <div class="work card">
+          <div class="wt">Delayed or Atypical? Characterizing Pediatric Speech Sound Disorder with Interpretable Speech Representations</div>
+          <div class="wm">ODISÉ École d'été 2026 (Summer School), UQAM · Flash Talk · August 2026 <span class="tag upcoming">upcoming</span></div>
         </div>
       </section>
 
