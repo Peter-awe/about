@@ -212,7 +212,7 @@
       <section id="profile">
         <h2>Profile</h2>
         <p class="lead">Qiwei Pan is a PhD student in Speech-Language Pathology (Research) at Université de Montréal, based in the <a href="https://coalab.org/" target="_blank" rel="noopener">COALab</a> at the Centre de recherche Azrieli du CHU Sainte-Justine, under the supervision of <a href="https://coalab.org/team/" target="_blank" rel="noopener">Professor Selçuk Güven</a>.</p>
-        <p>His research uses machine learning for the early identification of developmental speech-language disorders (DSLD) in children. The guiding idea is that DSLD subtypes leave distinguishable acoustic, linguistic, and prosodic traces in children's spontaneous speech. Machine-learning models can pick up these traces for early screening, and explainable-AI methods can turn them into interpretable biomarkers that clinicians are able to validate and trust.</p>
+        <p>His research asks what a machine-learning result about children's speech and language has to survive before it can be believed. Working with developmental language disorder (DLD) and speech sound disorder (SSD), he treats speech models as measuring instruments rather than as products: the question is not how accurate a classifier can be made, but what the classifier is reading, whether that signal is the child rather than the recording, and whether a figure obtained in one corpus means anything in the next. The work runs along three lines — identification, cross-linguistic generalisation, and interpretability.</p>
         <p>Qiwei reached this field through an interdisciplinary path: first an engineering degree, then a master's in computational linguistics, and now clinical speech AI. The combination of a quantitative engineering base and a deep background in linguistics is the lens he brings to children's speech. Alongside his research, he builds open-source tools that support the speech-processing and annotation workflows his lab relies on.</p>
         <div class="box card">
           <h3>Scholarships &amp; Awards</h3>
@@ -227,39 +227,64 @@
 
       <section id="research">
         <h2>Research &amp; Projects</h2>
-        <p>The central project develops AI-assisted early screening of speech-language disorders in multilingual children, organized around three aims.</p>
+        <p>The work is organised around three lines set with his supervisor in July 2026.</p>
         <div class="aims">
           <div class="aim card">
-            <p class="ey">Aim 1</p>
-            <h3>Multilingual paediatric clinical dataset</h3>
-            <p>Building on the host laboratory's existing paediatric clinical recordings (French, English, Italian, Spanish, Mandarin, Arabic, and Indigenous languages), expand the corpus with children aged 3–6 across DSLD subtypes, using dual independent speech-language-pathologist annotation (target Cohen's κ ≥ 0.80) and data augmentation.</p>
+            <p class="ey">Line 1</p>
+            <h3>Identification</h3>
+            <p>Establishing what can and cannot be identified from children's spontaneous speech and language samples, using public clinical corpora alongside the host laboratory's paediatric recordings. The emphasis is on what a reported identification figure actually rests on: every result is read against a confound floor and a selection ceiling computed inside the same corpus, and each component of the pipeline is substituted in turn to see whether the result survives.</p>
           </div>
           <div class="aim card">
-            <p class="ey">Aim 2</p>
-            <h3>Diagnostic model with interpretable outputs</h3>
-            <p>A CNN–Transformer model that takes children's spontaneous speech and produces DSLD subtype classification (target AUROC ≥ 0.85, sensitivity/specificity ≥ 0.80), with cognitive-score prediction as an auxiliary task. A disorder-specific speech recognition model is fine-tuned on the same data as an enabling tool for clinical transcription.</p>
+            <p class="ey">Line 2</p>
+            <h3>Cross-linguistic generalisation</h3>
+            <p>Testing whether an identification procedure and the model fitted under it travel together. Running the same protocol inside a new language is not the same thing as moving a fitted model into it, and the two are usually reported as one property. The work separates them and reports both, across English, Dutch, Russian and Cantonese corpora, with French clinical data in preparation.</p>
           </div>
           <div class="aim card">
-            <p class="ey">Aim 3</p>
-            <h3>Cross-linguistic biomarkers via explainable AI</h3>
-            <p>Using attention visualization, LIME, and SHAP, decode the model's decisions, identify the acoustic, phonological, and prosodic features that drive DSLD predictions across languages, and validate them as candidate clinical biomarkers through structured speech-language-pathologist ratings.</p>
+            <p class="ey">Line 3</p>
+            <h3>Interpretability</h3>
+            <p>Asking not whether a model is accurate but what it is looking at, and whether that is what a clinician looks at. This includes locating the evidence a model uses at the level of the utterance, checking it against clinically recognised markers, and reporting performance at operating points a clinician could actually use rather than as threshold-free summary statistics.</p>
           </div>
         </div>
       </section>
 
       <section id="publications">
         <h2>Publications &amp; Presentations</h2>
-        <p style="margin-top:0;font-size:14px;color:var(--muted);">Current speech and machine-learning work:</p>
+        <p class="subhead">Accepted</p>
+        <div class="summary card">
+          Pending — decisions expected September 2026.
+        </div>
+        <p class="subhead">Under review</p>
         <div class="work card">
           <div class="wt">A Layer-Wise Diagnosis of Continued Pre-Training for Children's Speech Recognition: Late-Layer Damage, Early-Layer Preservation</div>
-          <div class="wm"><span class="tag sub">in submission</span></div>
+          <div class="wm">IEEE Spoken Language Technology Workshop (SLT) 2026 <span class="tag sub">under review</span></div>
         </div>
         <div class="work card">
           <div class="wt">Self-Supervised Speech Models for Understanding and Identifying Developmental Language Disorder in Children</div>
-          <div class="wm"><span class="tag sub">in submission</span></div>
+          <div class="wm">AACL-IJCNLP 2026 Student Research Workshop <span class="tag sub">under review</span></div>
+        </div>
+        <p class="subhead">In preparation</p>
+        <div class="work card">
+          <div class="wt">When a Single Probe Misleads: Multi-Method Diagnosis and Validation of Continued Pre-Training for Children's Speech Recognition</div>
+          <div class="wm">IEEE/ACM Transactions on Audio, Speech, and Language Processing <span class="tag prep">in preparation</span></div>
         </div>
         <div class="work card">
-          <div class="wt">Auditing the Recording Chain: A Metadata-Only Test for Batch Confound in Clinical Speech Corpora, and What Identification Looks Like When It Passes</div>
+          <div class="wt">Reported accuracy in machine-learning identification of child speech and language disorders tracks acquisition provenance</div>
+          <div class="wm">npj Digital Medicine <span class="tag prep">in preparation</span></div>
+        </div>
+        <div class="work card">
+          <div class="wt">Delayed or Atypical? A Calibrated Representational Instrument for Characterizing Residual /ɹ/ in Children With Speech Sound Disorder</div>
+          <div class="wm">Journal of Speech, Language, and Hearing Research <span class="tag prep">in preparation</span></div>
+        </div>
+        <div class="work card">
+          <div class="wt">Reproducible but Not Portable: Language Sample Measures for Developmental Language Disorder Across Four Corpora and Three Languages</div>
+          <div class="wm">Journal of Speech, Language, and Hearing Research <span class="tag prep">in preparation</span></div>
+        </div>
+        <div class="work card">
+          <div class="wt">It is not where the child starts, it is where the adult stops: diagnosing the failure of transcript-free response timing in pediatric clinical speech</div>
+          <div class="wm"><span class="tag prep">in preparation</span></div>
+        </div>
+        <div class="work card">
+          <div class="wt">Examiner behaviour outranks every layer of a self-supervised encoder in a public clinical corpus</div>
           <div class="wm"><span class="tag prep">in preparation</span></div>
         </div>
         <div class="summary card">
@@ -278,9 +303,9 @@
           <div class="wt">When the Machine Can't Hear the Child: Locating the Damage in Children's Speech Recognition</div>
           <div class="wm">Réseau ODISÉ, "Terrains Fertiles" · Oral · April 2026 <span class="tag done">completed</span></div>
         </div>
+        <p class="subhead">Training &amp; Summer Schools</p>
         <div class="work card">
-          <div class="wt">Delayed or Atypical? Characterizing Pediatric Speech Sound Disorder with Interpretable Speech Representations</div>
-          <div class="wm">ODISÉ École d'été 2026 (Summer School), UQAM · Flash Talk · August 2026 <span class="tag upcoming">upcoming</span></div>
+          <div class="wm">ODISÉ École d'été 2026 (Summer School), UQAM · August 2026</div>
         </div>
       </section>
 
@@ -290,6 +315,10 @@
         <div class="work card">
           <div class="wt">Program Committee Member (abstract review)</div>
           <div class="wm">16th International Symposium on Bilingualism (ISB 16) · University of Saskatchewan, Saskatoon · Reviewing October–November 2026 · Conference June 2027 <span class="tag upcoming">upcoming</span></div>
+        </div>
+        <div class="work card">
+          <div class="wt">Annotation pipeline lead</div>
+          <div class="wm">COALab, CHU Sainte-Justine · Since April 2026 — designed and runs the three-tier annotation protocol for the lab's paediatric cognitive-communication corpus, and supervises the intern team delivering it.</div>
         </div>
       </section>
 
@@ -320,11 +349,11 @@
       <div class="box card">
         <h3>Areas of Expertise</h3>
         <ul>
-          <li>Children's speech and developmental language disorders (DSLD)</li>
+          <li>Children's speech, developmental language disorder (DLD), and speech sound disorder (SSD)</li>
           <li>Machine learning for clinical speech screening</li>
           <li>Self-supervised speech representations (WavLM, wav2vec 2.0)</li>
           <li>Speech recognition for child and atypical speech</li>
-          <li>Explainable AI and clinical biomarkers</li>
+          <li>Interpretability and clinical measurement validity</li>
           <li>Multilingual and clinical speech corpora</li>
         </ul>
       </div>
